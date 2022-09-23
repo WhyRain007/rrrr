@@ -1,0 +1,103 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> 
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: brown;
+        font-size: 20pt;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        transition: all .60s;
+    }
+     
+    div {
+        text-align: center;        
+        
+    }
+    button {
+        border: 2px solid rgb(46, 2, 46);
+        padding: 20px 40px;
+        border-radius: 100px;
+        background: rgb(105, 68, 79);
+        cursor: pointer;
+        font-size: large;
+        color: rgb(129, 177, 179)
+    }
+    
+   h1 {  font-size: 60pt; animation: down 10s infinite ease; }  
+   h2 { font-size: 50pt; animation: down2 10s infinite ease;}
+   h3 { animation: down1 2s;}  
+   
+    
+    @keyframes down {
+        from {
+            transform: translateX(0);
+
+        }
+        33% { transform: translateX();}
+        66% { transform: translateX(300px); }
+
+        to {transform: translatex(0);
+
+        }
+    }
+
+    @keyframes down2 {
+        from {
+            transform: translateX(0);
+
+        }
+        33% { transform: translateX(300px);}
+        66% { transform: translateX(-300px); }
+
+        to {transform: translatex(0);
+
+        }
+    }
+
+    @keyframes down1 {
+
+        from { transform: translatey(50px);}
+
+        to{ transform: translatey(0);}
+    }
+    </style>
+    <title>Кошка</title>
+  </head>
+  <body>
+    <div>
+        <H3>Привет, Человек</H3>
+        <H2> На данный момент</H2>
+        <H1>00:00:00</H1>
+
+        <button> Не нажимай!!!</button>
+        
+    </div>
+
+    <script>
+        const name = prompt('Вы кто?')
+        document.querySelector('h3').textContent = 'Привет,  ' + name
+
+        document.querySelector('h1').textContent =   new Date().toLocaleTimeString()
+
+        setInterval(function() {document.querySelector('h1').textContent =  new Date().toLocaleTimeString()}, 1000)
+
+        const colors = ['IndianRed ', 'LightPink', 'Tomato', 'PaleGoldenrod', 'Violet','RosyBrown','LightGreen','MediumAquamarine','Teal']
+        let index = 0
+
+        document.querySelector('Button').onclick = function () {
+            document.body.style.background = colors [index]
+            index++
+            if (index>=colors.length) index=0
+         }
+    </script>
+
+  </body>
+  </html>  
+<!--  -->

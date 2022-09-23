@@ -1,0 +1,143 @@
+/*  */
+@import url('https://fonts.googleapis.com/css2?family=Oswald&family=Raleway&display=swap');
+
+
+.container {
+   margin: 0;
+   padding: 0;
+}
+
+
+.foto {display: inline-block; padding-left: 20px; }
+
+body {background: rgb(37, 24, 82); color: rgb(0, 0, 0); 
+    font-family: 'Raleway', sans-serif; font-size: 30px;}
+
+h1,h2,h3 {color: rgb(36, 7, 63); 
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h2 {   font-size: 50px;}
+
+h3 {font-size: 40px;}
+
+
+.verh {
+    background: rgb(112, 107, 249); 
+    padding: 30px; 
+    margin: 0px; 
+}
+
+#pole, h3 {
+    background: rgb(69, 51, 190); 
+    color: #8877f1; 
+    margin: auto; 
+    padding: auto; 
+}
+ 
+#pole2 { background: rgb(108, 108, 241);
+    margin: 0px; 
+    padding: 30px;
+}
+
+.for input, textarea {background: rgb(165, 144, 244);
+     color: black;
+      margin: 10px;
+}
+.qe { background: rgb(127, 9, 230); color: aliceblue;
+}
+    
+
+.btn { 
+      background: #5b43f5;
+      color: aquamarine;
+      font: oswald; border-radius: 20px;
+      padding: 10px; 
+      text-decoration: none; 
+      border: 4px solid rgb(138, 179, 245) ; 
+      border-bottom: 4px solid #02010b; 
+      border-left: 4px solid #02010b;
+}
+
+.btn:hover { background: #4b36d4 ;
+     color: rgb(44, 148, 113); 
+     border: 4px solid rgb(47, 72, 215)
+}
+
+
+.btn:active { background: #291990;
+     border:4px solid #4c40b5; 
+     color: rgb(9, 79, 79); 
+     border-top: 4px solid #02010b ; 
+     border-right: 4px solid #02010b;
+}
+
+#op{ text-align: center;
+}
+
+.tab {padding: 0;
+     margin: 0;
+     width: 100%;  
+     text-align: center;
+}
+
+.tab tr:nth-child(even) {background: #301ea4a3;
+}
+
+table, th, td {border:2px solid #02010b; border-collapse: collapse;
+}
+
+table th {background: #2f1ca9;
+}
+
+.foto, .verh, .dog, h1 {padding: 0; margin: 0;
+}
+
+.foto {padding: 10px;
+}
+
+.nau {margin: auto; width: 100%;
+}
+
+.formgl {display: block;
+}
+
+
+.form h2 {text-align: center;
+}
+
+.for {display: inline-block;
+     width: 40%;
+}
+.formgl  { text-align: center;
+     background: #5b43f5;
+}
+
+.ris {background-color: #5b43f5; 
+    text-align: center; 
+    padding: 20px;
+}
+
+.sp { max-width: 25%; 
+}
+
+.hobby { padding: 20px;
+     text-align: center;
+    
+} 
+
+
+
+
+
+
+@media (max-width: 700px) {.btn { padding: 10px; background: transparent;border-right: transparent; border-left:transparent ; border-top:transparent; border-bottom:  transparent; }
+@media (max-width: 600px) {.foto, .tab {font-size: 15px;}}
+@media (max-width: 600px) {.verh { margin: 0; padding: 0; border: 0;}}
+@media (max-width: 600px) {.for, .formgl {display: inline-block; width: 100%; }}
+@media (max-width: 600px) {#ff {height: 200px;}} 
+@media (max-width: 600px) {.container {margin: 0; padding: 0;}}
